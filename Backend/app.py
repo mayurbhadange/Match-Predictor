@@ -1,4 +1,4 @@
-from flask import Flask, request 
+from flask import Flask, request, jsonify 
 import pandas as pd
 import json 
 from sklearn.ensemble import RandomForestClassifier
@@ -15,8 +15,8 @@ import os
 
 
 app = Flask(__name__)
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+CORS(app, resources={r"/*": {"origins": "https://match-predictor-osvx.vercel.app"}})
+
 
 
 
