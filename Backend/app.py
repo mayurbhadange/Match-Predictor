@@ -58,7 +58,8 @@ def rolling_averages(group, cols, new_cols):
 #     return combined
 
 def TrainModel(data):
-    matches=pd.read_csv('matchesYt.csv',index_col=0)
+    matches = pd.read_csv('https://raw.githubusercontent.com/mayurbhadange/Match-Predictor/main/Backend/matchesYT.csv', index_col=0)
+
     
     matches=matches.groupby("team").get_group(data["team"])
     matches["target"]=matches["result"].astype("category").cat.codes
