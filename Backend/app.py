@@ -8,6 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from flask_cors import CORS, cross_origin
 from urllib.parse import urlencode
 import re
+import os
 
 
 
@@ -158,5 +159,6 @@ def predict_match():
 
 
 if __name__ == "__main__": 
-	app.run(port=5000)
-print("Server is runnin on port 5000")
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+    print("Server is runnin on port 5000")
