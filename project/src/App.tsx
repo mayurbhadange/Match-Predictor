@@ -35,7 +35,17 @@ function App() {
 
   const handlePredict = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/predict",{
+      // const response = await axios.post("http://localhost:5000/predict",{
+      //   team:homeTeam,
+      //   opponent:awayTeam,
+      //   venue,
+      //   formation,
+      //   date,
+      //   time
+
+      // });
+
+      const response = await axios.post("https://match-predictor-zv17.onrender.com/predict",{
         team:homeTeam,
         opponent:awayTeam,
         venue,
