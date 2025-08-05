@@ -4,21 +4,6 @@ An AI-powered fullstack web application that predicts the outcome of English Pre
 
 ---
 
-## 📂 Project Structure
-/workspace/
-│
-├── matches.csv, matchesYT.csv # Historical match data
-├── Untitled.ipynb # Jupyter notebook for prototyping
-│
-├── /Backend/ # Flask backend
-│ ├── app.py # Main backend application
-│ └── matchesYT.csv # Training data
-│
-└── /project/ # React + Vite + Tailwind frontend
-├── index.html
-├── package.json
-├── tsconfig.json
-└── /src/ # Main frontend logic (TypeScript)
 ---
 
 ## 🔙 Backend
